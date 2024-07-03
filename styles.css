@@ -1,0 +1,158 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(29, 245, 83, 0.1);  /* Couleur de fond pour le corps */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-image: url('/img/ba.jpg'); /* Chemin de l'image de fond */
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(233, 237, 234, 0.2); /* Fond avec transparence */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    width: 45%;
+}
+
+.weather-app {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.input-container {
+    text-align: center;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    padding: 10px;
+    width: 89.5%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 96%;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#weatherContainer {
+    margin-top: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#weatherIcon {
+    width: 100px;
+}
+
+h2, p {
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+.main-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    padding: 0 20px;
+}
+
+.details div {
+    display: flex;
+    align-items: center;
+}
+
+.details img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.details div div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.city-list {
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.city-list h2 {
+    text-align: center;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+option {
+    padding: 10px;
+}
+
+#locationIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+#humidity, #windSpeed {
+    font-weight: bold;
+}
+.error-message {
+    text-align: center;
+    color: red;
+    margin-top: 10px;
+}
+
+#addCityButton {
+    margin-top: 5px;
+} 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Météo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <div class="input-container">
+                <h1>Application Météo</h1>
+                <input type="text" id="cityInput" placeholder="Entrez le nom d'une ville">
+                
+                <button id="searchButton">Rechercher</button>
+                <button id="addCityButton">Ajouter la ville à la liste</button>
+                <div id="weatherContainer">
+                    <h2 id="cityName"><img id="locationIcon" src="/img/log.png" alt="Position Icon"> <span id="cityNameText"></span></h2>
+                    <div class="main-info">
+                        <div id="iconContainer"><img id="weatherIcon" src="" alt="Weather Icon"></div>
+                        
+                    </div>
+                    <p id="description"></p>
+                    <p id="localTime"></p>
+                    <p>Température: <span id="temperature"></span> °C</p>
+                    <p>Pression: <span id="pressure"></span> hPa</p>
+                    <div class="details">
+                            <div class="humidity-info">
+                                <img src="/img/humidity.png" alt="Humidity Icon">
+                                <div>
+                                    <p>humidity</p>
+                                    <p id="humidity"></p>
+                                </div>
+                            </div>
+                            <div class="wind-info">
+                                <img src="/img/wind-speed.png" alt="Wind Icon">
+                                <div>
+                                    <p>wind-speed</p>
+                                    <p id="windSpeed"></p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="city-list">
+                <h2>Liste des villes</h2>
+                <select id="citySelect">
+                    <option value="">-- Sélectionner une ville --</option>
+                </select>
+                <p id="errorMessage" class="error-message"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
